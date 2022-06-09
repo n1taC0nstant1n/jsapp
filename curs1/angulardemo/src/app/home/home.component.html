@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+<ul>
+    <li>{{ user.id }}</li>
+    <li>{{ user.nume }}</li>
+    <li>{{ user.prenume }}</li>
+</ul>
+<p>home works!</p>
+<!-- <img [src]="image" [alt]="user.nume" width="200"> -->
+<img *ngIf ='showImage' src="{{ image }}" alt="{{ user.nume }}" width="200">
+<button (click)='afiseazaImagine()'>Afiseaza/Ascunde Imagine</button>
